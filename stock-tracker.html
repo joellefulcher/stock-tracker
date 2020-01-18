@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/stock-tracker.js"></script>
+    <script src="js/stock-tracker-edit.js"></script>
+    <link rel="stylesheet" type="text/stylesheet" href="css/stock-tracker.css">
+    <title>Stock Tracker</title>
+</head>
+<body>
+    <div>
+        <table class="table table-sm"></table>      
+        <thead>
+            <h3>
+                <td>Symbol</td>
+                <td>Name</td>
+                <td>Location</td>
+                <td>Current</td>
+                <td>Paid</td>
+                <td>Gain/Loss</td>
+                <td>Shares</td>
+                <td>Value</td>
+                <td>&nbsp</td>
+            </h3>
+        </thead>
+    <hr>
+    </div>
+    <div>    
+        <table>
+            <td><input id="psymbol" type="text" placeholder="Stock Symbol"></td>
+            <td><input id="pname" type="text" disabled></td>
+            <td><input id="pname" type="text" disabled></td>
+            <td><input id="pcurrent" type="number" placeholder="current stock value"></td>
+            <td><input id="ppaid" type="number" placeholder="price paid per share"></td>
+            <td><input id="pgainOrLoss" type="number"></td>
+            <td><input id="pshares" type="number" placeholder="number of shares"></td>
+            <td><input id="pvalue" type="number" placeholder="total value of stocks"></td>
+        </table>
+        
+    </div>   
+    <button id="save" class="btn btn-primary">Save</button>
+    <button id="update">Update</button>
+    <button id="add">Add</button>  
+    <button id="delete">Delete</button>   
+</body>
+</html>
